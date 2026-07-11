@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #070b14;
+    color: #e2e8f0;
+    font-family: 'Outfit', 'Inter', sans-serif;
+  }
+}
+
+/* Premium Glassmorphic Card styles */
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphic elements with dynamic hover interactions */
+.glass-card-interactive {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(17, 27, 49, 0.75);
+  border-color: rgba(16, 185, 129, 0.25);
+  box-shadow: 0 12px 40px -10px rgba(16, 185, 129, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Premium Form Elements */
+.glass-input {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-input:focus {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+  outline: none;
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+/* Grid layout patterns */
+.dotted-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Glowing backdrops */
+.glow-emerald {
+  filter: blur(140px);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+}
+
+.glow-indigo {
+  filter: blur(140px);
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+}
+
+.glow-pink {
+  filter: blur(140px);
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.08) 0%, transparent 70%);
+}

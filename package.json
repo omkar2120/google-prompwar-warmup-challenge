@@ -1,0 +1,10 @@
+{
+  "name": "smartchef-workspace",
+  "version": "1.0.0",
+  "description": "SmartChef AI - Frontend Serverless Application",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "typecheck": "npm run typecheck --prefix frontend"
+  }
+}
